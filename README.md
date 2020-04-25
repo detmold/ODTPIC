@@ -31,7 +31,6 @@ ans1 |= (a[ rand_edges[0]-1 ] ^ a[ rand_edges[1] ]);
 ans2 |= (b[ rand_edges[2]-1 ] ^ b[ rand_edges[3] ]);
 ans |= (ans1^ans2);
 cout << ans.count() << endl;
-*/
 
 ```
 4. Zeby obliczyc ostateczny wynik robimy ans |= (ans1 ^ ans2) i nastepnie obliczamy ilość 1 w tym bitsecie jako ans.count() co jest ostatecznym wynikiem.
